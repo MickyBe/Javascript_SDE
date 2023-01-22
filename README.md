@@ -65,3 +65,39 @@ let arr = [2, 5, 3, 7, 5];
 arr.indexOf(2); // find the index of element
 arr.includes(2); // returns true if it exists
 ```
+## Objects (dictionaries)
+```
+//declaring and accessing variables
+let obj = new Object();
+let obj = {
+   "name": 'Prashant',
+   age: 24
+};
+obj.val = 4
+obj['var'] = 4
+```
+- deep and shallow copy
+```
+let obj = {
+   name: "Prashant",
+   age: 24,
+   details: {
+     gender: "Male"
+   }
+};
+
+//shallow copy
+let copy = Object.assign({}, obj);
+
+//deep copy
+let copy = JSON.parse(JSON.stringify(obj));
+delete obj.name
+
+//check if property exist
+obj.hasOwnProperty("name")
+//checks in the prototype chain to
+"name" in obj
+
+// returns list of keys
+Object.keys(obj)
+```
