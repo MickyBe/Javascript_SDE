@@ -101,3 +101,11 @@ obj.hasOwnProperty("name")
 // returns list of keys
 Object.keys(obj)
 ```
+## String
+```
+let a = String(25)
+let a = "25"
+
+let str1 = new String(25);// is object
+let str2 = String(25);//returns primitive string
+```
